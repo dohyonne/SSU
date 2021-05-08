@@ -43,6 +43,8 @@ GitBash 다운로드 : <https://git-scm.com/downloads>
 
     git init
 
+![pic19](https://user-images.githubusercontent.com/65977106/117543157-9a758080-b056-11eb-9d18-2412853ad462.png)
+
 그리고 GitHub에서 사진 부분에 보이는 주소를 복사해주세요.
 
 이 주소는 로컬저장소와 원격저장소를 연결하기 위한 명령어를 입력할 때 사용됩니다.
@@ -53,11 +55,17 @@ GitBash 다운로드 : <https://git-scm.com/downloads>
 
     git remote add origin 원격저장소주소
 
+![pic20](https://user-images.githubusercontent.com/65977106/117543237-df011c00-b056-11eb-9857-85857be7118d.png)
+
 origin에는 원격저장소의 주소가 저장됩니다.
+
+`git remote -v`를 사용하면 원격저장소 주소를 확인할 수 있습니다.
 
 ---
 
 ## 사용자 정보 설정  
+
+</br>
 
 누가 어떤 작업을 수행했는지를 알 수 있게하기 위해 다음 정보들을 입력해서 사용합니다.
 
@@ -71,9 +79,13 @@ origin에는 원격저장소의 주소가 저장됩니다.
     
     git config user.name
 
+![pic21](https://user-images.githubusercontent.com/65977106/117543291-1ff93080-b057-11eb-8f49-5a609ac72765.png)
+
 ---
 
 ## 프로젝트 시작하기
+
+</br>
 
 자신이 원하는 프로젝트를 위한 파일을 로컬저장소에 생성해주세요.
 
@@ -84,6 +96,8 @@ origin에는 원격저장소의 주소가 저장됩니다.
 ---
 
 ## 파일 상태 확인하기  
+
+</br>
 
 git은 프로젝트를 진행하면서 파일들의 상태가 수시로 바뀝니다.
 
@@ -147,6 +161,8 @@ add를 사용한 다음 지금의 파일의 변경사항을 저장하려면 다�
 
 ## push
 
+</br>
+
 이제 GitHub에 commit된 내용을 올려봅시다.
 
     git push origin 브랜치명
@@ -163,7 +179,7 @@ add를 사용한 다음 지금의 파일의 변경사항을 저장하려면 다�
 
 ---
 
-## 브랜치
+## 브랜치 생성과 브랜치 이동
 
 </br>
 
@@ -201,6 +217,10 @@ add를 사용한 다음 지금의 파일의 변경사항을 저장하려면 다�
 
 **Branch_B**에서는 본문 7~13번을 작성할 것입니다.
 
+---
+
+## merge를 이용한 병합
+
 </br>
 
 해당 브랜치에서의 작업이 끝났다면 merge 명령어를 사용해 master 브랜치를 병합하는 작업을 해보겠습니다.
@@ -218,6 +238,12 @@ Branch_B에 대해서도 똑같이 병합하면 됩니다.
 Branch_B를 작업하는 중간에 master에서 수정이 이루어졌더라도 병합이 가능합니다.
 
 **단, 서로 같은 부분을 수정했다면 충돌이 일어나니 주의해야합니다.**
+
+---
+
+## commit 로그 확인과 특정 commit으로 돌아가기
+
+</br>
 
 이제 본문은 전부 완성이 되었습니다.
 
@@ -247,6 +273,10 @@ Branch_B를 작업하는 중간에 master에서 수정이 이루어졌더라도 
 
 그러면 가장 최근 commit이 바뀐 것을 확인할 수 있습니다.
 
+---
+
+## rebase를 이용한 병합
+
 </br>
 
 또, 브랜치작업이 끝났으니 master와 병합을 하려고 합니다.
@@ -266,6 +296,8 @@ rebase는 merge보다 commit history가 더 깔끔하다는 장점이 있습니�
 ---
 
 ## GitHub에서 데이터 받아오기
+
+</br>
 
 이번에는 github에 있는 파일을 가져와서 작업하는 방법에 대한 설명입니다.
 
@@ -297,6 +329,50 @@ tag는 보통 프로젝트의 버전을 표시하기 위해 사용합니다.
 
     git tag 태그명
 
-tag를 단 후에 push를 하게 되면 다음과 같이 GitHub에서도 tag를 확인할 수 있습니다.
+![pic15](https://user-images.githubusercontent.com/65977106/117542178-8891de80-b052-11eb-91ce-64c35dd0acce.png)
+
+tag를 단 후에 다음과 같이 push를 하게 되면 다음과 같이 GitHub에서도 tag를 확인할 수 있습니다.
+
+![pic16](https://user-images.githubusercontent.com/65977106/117542205-a3fce980-b052-11eb-8670-b0272d61bc78.png)
+
+↓↓ GitHub에 추가된 tag ↓↓
+
+![pic18](https://user-images.githubusercontent.com/65977106/117542339-2be2f380-b053-11eb-9816-56fd4c3589f4.png)
+
+---
+
+## 명령어 사용표
 
 </br>
+
+> * [add](#add와-commit)
+>
+> * [branch](#브랜치-생성과-브랜치-이동)
+>
+> * [checkout](#브랜치-생성과-브랜치-이동)
+>
+> * [clone](#github에서-데이터-받아오기)
+>
+> * [commit](#add와-commit)
+>
+> * [config](#사용자-정보-설정)
+>
+> * [init](#로컬-저장소-설정)
+>
+> * [log](#commit-로그-확인과-특정-commit으로-돌아가기)
+>
+> * [merge](#merge를-이용한-병합)
+>
+> * [pull](#github에서-데이터-받아오기)
+>
+> * [push](#push)
+>
+> * [rebase](#rebase를-이용한-병합)
+>
+> * [remote](#로컬-저장소-설정)
+>
+> * [reset --hard](#commit-로그-확인과-특정-commit으로-돌아가기)
+>
+> * [status](#파일-상태-확인하기)
+>
+> * [tag](#tag-달기)

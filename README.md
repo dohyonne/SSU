@@ -273,9 +273,13 @@ rebase는 merge보다 commit history가 더 깔끔하다는 장점이 있습니�
 
     git pull origin 브랜치명
 
+지금 쓰고 있는 이 README 파일을 GitHub에 가서 직접 업로드 한 뒤에 로컬 저장소로 가져와보겠습니다.
+
+![pic14](https://user-images.githubusercontent.com/65977106/117541921-313f3e80-b051-11eb-81d4-35005154549d.png)
+
 </br>
 
-다른 프로젝트에 처음 참여하거나 아예 저장소를 복제하고 싶다면 clone 명령어를 사용합니다.
+다른 프로젝트에 처음 참여하거나 아예 저장소를 복제하고 싶다면 clone 명령어를 사용하면 됩니다.
 
     git clone 원격저장소주소
 
@@ -290,10 +294,6 @@ rebase는 merge보다 commit history가 더 깔끔하다는 장점이 있습니�
 이제 commit을 하고, push를 하기 전에 tag를 달아보려 합니다.
 
 tag는 보통 프로젝트의 버전을 표시하기 위해 사용합니다.
-
-하지만 지금 만드는 프로젝트는 버전이 여러개 나올 정도의 대규모 프로젝트가 아니기 때문에 임의로 tag를 달겠습니다.
-
-tag 명령어는 다음과 같습니다.
 
     git tag 태그명
 

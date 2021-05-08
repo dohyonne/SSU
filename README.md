@@ -345,6 +345,26 @@ tag를 단 후에 다음과 같이 push를 하게 되면 다음과 같이 GitHub
 
 </br>
 
+|     | 사용여부 | 
+| --- | --- |
+| add |  O  |
+| branch |  O  |
+| checkout |  O  |
+| clone |  O  |
+| commit |  O  |
+| config |  O  |
+| init |  O  |
+| log |  O  |
+| merge |  O  |
+| pull |  O  |
+| push |  O  |
+| rebase |  O  |
+| remote |  O  |
+| reset --hard |  O  |
+| status |  O  |
+| tag |  O  |
+
+
 > * [add](#add와-commit)
 >
 > * [branch](#브랜치-생성과-브랜치-이동)
